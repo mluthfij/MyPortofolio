@@ -3,70 +3,68 @@
 import { faGithubAlt, faLinkedinIn, faMediumM, faFacebook, faTwitter, faInstagram, faYoutube, faBehance } from "@fortawesome/free-brands-svg-icons"
 
 export const userinfo = {
-    logoText: "Michael Scott", //This text is visible on your navbar and footer like your logo.
+    logoText: "Muhammad Luthfi", //This text is visible on your navbar and footer like your logo.
     contact: {
-        email: 'michaelscott@email.com', //It is always a good idea to mention your email on your website. Good platform to communicate.
-        phone: '1234567890', //Phone number is optional, if you dont want it, consider leaving it blank .
-        countrycode: '+91' //It is advisable to add the country code incase you mention your contact number.
+        email: 'm.luthfi.juliansyah@gmail.com', //It is always a good idea to mention your email on your website. Good platform to communicate.
+        phone: ' 821 2739 6006', //Phone number is optional, if you dont want it, consider leaving it blank .
+        countrycode: '+62' //It is advisable to add the country code incase you mention your contact number.
     },
     socials: [
         //For aesthetics, it is advisable for you to mention upto 4 social media links only. Fill in the links.
         //more icons are imported above, use as you like them.
-        { type: 'github', link: '', icon: faGithubAlt },
-        { type: 'linkedin', link: '', icon: faLinkedinIn },
-        { type: 'medium', link: '', icon: faMediumM },
+        { type: 'github', link: 'https://github.com/mluthfij', icon: faGithubAlt },
+        { type: 'linkedin', link: 'https://www.linkedin.com/in/mluthfij', icon: faLinkedinIn },
+        { type: 'instagram', link: 'https://www.instagram.com/m.luthfij', icon: faInstagram },
     ],
     greeting: {
         //this text goes on your landing page
-        title: "Hey there, I am Michael.",
-        subtitle: "Michael Gary Scott is a fictional character in NBC's The Office, portrayed by Steve Carell. Michael is the protagonist of the series, serving as the Regional Manager of the Scranton branch of a paper distribution company, Dunder Mifflin Inc. Also, that's what she said!"
+        title: "Hey there, I am Luthfi.",
+        subtitle: "A software engineer with experience in Ruby on Rails"
     },
     capabilities: [
         //this text goes on your home page in table format.
         //For aesthetics, it is advisable for you to mention upto 4 catgeories links only.
         //For aesthetics, it is advisable for you to keep similar number of skills in each category
         {
-            category: "Category", // eg.frontend, backend, devops etc
-            skills: ["Skillset1", "Skillset1", "Skillset1"] //eg. react, html, python etc.
+            category: "Programming Languages", // eg.frontend, backend, devops etc
+            skills: ["Ruby", "Javascript", "PHP", "HTML", "CSS"] //eg. react, html, python etc.
         },
         {
-            category: "Category",
-            skills: ["Skillset2", "Skillset2", "Skillset2"]
+            category: "Frameworks / Libraries",
+            skills: ["Ruby on Rails", "Laravel", "Nuxt.js", "Stimulus", "Tailwind CSS", "Bootstrap"] //eg. react, nodejs, express etc.
         },
         {
-            category: "Category",
-            skills: ["Skillset3", "Skillset3", "Skillset3"]
+            category: "Database & Background Jobs",
+            skills: ["PostgreSQL", "Redis", "Sidekiq"]
         },
         {
-            category: "Category",
-            skills: ["Skillset4", "Skillset4", "Skillset4"]
+            category: "DevOps / Tools",
+            skills: ["Git", "Docker"]
         },
+        // {
+        //     category: "Real-time / Backend",
+        //     skills: ["ActionCable"]
+        // },
     ],
     about: {
         //this text goes at the bottom of your home page.
         content: "'Do I need to be liked? Absolutely not. I like to be liked. I enjoy being liked. I have to be liked. But it’s not like this compulsive need like my need to be praised.' Whatever the situation or conflict might be, it can almost always be traced back to this need. His conference room characters, fun runs, and copious amounts of office parties are all aimed at his need to be praised.",
-        resume: "/" //link your resume here. it can be drive link or any other link
+        resume: "https://drive.google.com/file/d/1AFyxQp0ioYZiuEeCSZvtqzRkxG87VwOW/view?usp=sharing" //link your resume here. it can be drive link or any other link
     },
     education: {
         visible: true, //set this to false if you want to omit this section
         educationList: [
             {
-                time: 'May - Oct 2020', //timespan
-                title: 'Degree name', //eg. BTech in Compuster Engineering
-                organization: 'School Name', //eg. VJTI, Mumbai
-                description: 'Lorem ipsum dolor sit amet consectetur' //eg. secured a cgpa of 9.25 in all sems appeared in so far
+                time: '2019 - 2023', //timespan
+                title: 'Computer Science', //eg. BTech in Compuster Engineering
+                organization: 'Widyatama University', //eg. VJTI, Mumbai
+                // description: 'Lorem ipsum dolor sit amet consectetur' //eg. secured a cgpa of 9.25 in all sems appeared in so far
             },
             {
-                time: 'May - Oct 2020',
-                title: 'Degree name',
-                organization: 'School Name',
-                description: 'Lorem ipsum dolor sit amet consectetur'
-            },
-            {
-                time: 'May - Oct 2020',
-                title: 'Degree name',
-                organization: 'School Name',
-                description: 'Lorem ipsum dolor sit amet consectetur'
+                time: '2016 - 2019',
+                title: 'Electrical Engineering',
+                organization: 'SMKN 12 Bandung',
+                // description: 'Lorem ipsum dolor sit amet consectetur'
             },
         ],
     },
@@ -74,31 +72,38 @@ export const userinfo = {
         visible: true, //set this to false if you want to omit this section
         experienceList: [
             {
-                company: 'Dunder Mifflin', //company name eg.Microsoft
+                company: 'PT Halal Digital International', //company name eg.Microsoft
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*', //companylogo
-                position: 'Regional Manager', //post you held eg.Senior SDE
-                time: 'March 2020 - May 2020', //timespan
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum' //eg. spearheaded the graphics team in designing SASS product UIs
+                position: 'Junior Software Engineer', //post you held eg.Senior SDE
+                time: 'November 2023 - April 2025', //timespan
+                description: 'Maintain and develop Halalin web applications' //eg. spearheaded the graphics team in designing SASS product UIs
             },
             {
-                company: 'Dunder Mifflin',
+                company: 'SIS Pottery',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
-                position: 'Regional Manager',
-                time: 'March 2020 - May 2020',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+                position: 'Internship',
+                time: 'February 2022 - August 2022',
+                description: 'Creating a company profile website with product sales system.'
             },
             {
-                company: 'Dunder Mifflin',
+                company: 'PT Telehouse Engineering',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
-                position: 'Regional Manager',
-                time: 'March 2020 - May 2020',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+                position: 'Freelance',
+                time: 'July 2019 - September 2019',
+                description: 'Assembling ACPDB panel and KWH panel'
+            },
+            {
+                company: 'PT Pindad (Persero)',
+                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
+                position: 'Internship',
+                time: 'April 2018 - July 2018',
+                description: 'Electrical power installation in PAM & Asset division'
             },
         ],
     },
     blogs: {
         //set this to false if you want to omit this section
-        visible: true
+        visible: false
     },
 }
 

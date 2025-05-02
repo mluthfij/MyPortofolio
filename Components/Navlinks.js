@@ -14,16 +14,16 @@ const Navlinks = () => {
     return (
         <>
             <div className={styles.navlinks}>
-                <Link href='/' style={{ opacity: activeLink === '/' || activeLink === '/#work' ? '100%' : '80%' }}>Home</Link>
+                <Link href='/'><span style={{ opacity: activeLink === '/' || activeLink === '/#work' ? '100%' : '80%' }}>Home</span></Link>
             </div>
             <div className={styles.navlinks}>
-                <Link href='/#about' style={{ opacity: activeLink === '/#about' ? '100%' : '80%' }}>About</Link>
+                <Link href='/#about'><span style={{ opacity: activeLink === '/#about' ? '100%' : '80%' }}>About</span></Link>
             </div>
             <div className={styles.navlinks}>
-                <Link href='/work' style={{ opacity: activeLink === '/work' ? '100%' : '80%' }}>Work</Link>
+                <Link href='/work'><span style={{ opacity: activeLink === '/work' ? '100%' : '80%' }}>Work</span></Link>
             </div>
             <div className={styles.navlinks}>
-                <Link href='/contact' style={{ opacity: activeLink === '/contact' ? '100%' : '80%' }}>Contact</Link>
+                <Link href='/contact'><span style={{ opacity: activeLink === '/contact' ? '100%' : '80%' }}>Contact</span></Link>
             </div>
         </>
 

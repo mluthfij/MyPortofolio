@@ -30,7 +30,7 @@ const Skills = ({ currentTheme }) => {
                 }
 
             </div>
-            <div style={{ textAlign: 'center', padding: '1rem 0' }}><Link href="/contact" className={styles.cta3} style={{ background: 'transparent', border: `2px solid ${currentTheme.accent}` }}>{ctaTexts.capabCTA} <span>&gt;</span></Link></div>
+            <div style={{ textAlign: 'center', padding: '1rem 0' }}><Link href="/contact"><span className={styles.cta3} style={{ background: 'transparent', border: `2px solid ${currentTheme.accent}` }}>{ctaTexts.capabCTA} <span>&gt;</span></span></Link></div>
         </>
     )
 }

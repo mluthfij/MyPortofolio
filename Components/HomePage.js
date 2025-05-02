@@ -14,7 +14,11 @@ const HomePage = ({ currentTheme }) => {
             <div className={styles.homeheading} style={{ backgroundColor: currentTheme.secondary }}>
                 <h1 className={styles.heading}>{userinfo.greeting.title}</h1>
                 <h2 className={styles.subheading} style={{ color: currentTheme.subtext }}>{userinfo.greeting.subtitle}</h2>
-                <Link href="#work" className={styles.cta1} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText, boxShadow: currentTheme.boxShadow }}>{ctaTexts.landingCTA}</Link>
+                <Link href="#work">
+                    <span className={styles.cta1} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText, boxShadow: currentTheme.boxShadow }}>
+                        {ctaTexts.landingCTA}
+                    </span>
+                </Link>
             </div>
             <div className={styles.homeWorkSection} id="work">
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.workHomePage}</h1>
@@ -27,7 +31,11 @@ const HomePage = ({ currentTheme }) => {
                         )
                     })
                 }
-                <div style={{ textAlign: 'center', paddingBottom: '2rem' }}><Link href="/work" className={styles.cta3} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.workCTA} <span>&gt;</span></Link></div>
+                <div style={{ textAlign: 'center', paddingBottom: '2rem' }}>
+                    <Link href="/work">
+                        <span className={styles.cta3} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.workCTA} <span>&gt;</span></span>
+                    </Link>
+                </div>
             </div>
             <div id="skills" className={styles.homeSkillSection} style={{ backgroundColor: currentTheme.secondary }}>
                 <Skills currentTheme={currentTheme} />
@@ -41,7 +49,11 @@ const HomePage = ({ currentTheme }) => {
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.about}</h1>
                 <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up">{userinfo.about.content}</p>
                 <div data-aos="fade-up" style={{ textAlign: 'center', padding: '1rem 0', margin: '1rem 0', position: 'relative', display: 'flex', color: currentTheme.subtext }}>
-                    <Link href={userinfo.about.resume} target="_blank" className={styles.cta4} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`, display: 'flex', alignItems: 'center' }}>{ctaTexts.resumeCTA}&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesomeIcon width="15px" height="15px" icon={faExternalLinkAlt} /></Link>
+                    <Link href={userinfo.about.resume} target="_blank">
+                        <span className={styles.cta4} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`, display: 'flex', alignItems: 'center' }}>
+                            {ctaTexts.resumeCTA}&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesomeIcon width="15px" height="15px" icon={faExternalLinkAlt} />
+                        </span>
+                    </Link>
                 </div>
             </div>
         </div>

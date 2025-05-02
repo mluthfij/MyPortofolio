@@ -33,7 +33,11 @@ const Education = ({ currentTheme }) => {
                 </ul>
             </div>
 
-            <div style={{ textAlign: 'center', paddingBottom: '2rem' }}><Link href="/#about" className={styles.cta3} style={{ background: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.educationCTA} <span>&gt;</span></Link></div>
+            <div style={{ textAlign: 'center', paddingBottom: '2rem' }}>
+                <Link href="/#about">
+                    <span className={styles.cta3} style={{ background: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.educationCTA} <span>&gt;</span></span>
+                </Link>
+            </div>
 
         </div>
     )
