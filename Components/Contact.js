@@ -90,12 +90,12 @@ const Contact = ({ currentTheme }) => {
       </form>
 
       <div style={{ textAlign: 'center', paddingTop: '0.5rem' }}>
-        <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email : ''}`}><a>{userinfo.contact.email}</a></Link>
+        <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email : ''}`}>{userinfo.contact.email}</Link>
       </div>
       {
         userinfo.contact.phone ?
           <div style={{ textAlign: 'center', paddingTop: '0.2rem', color: currentTheme.tertiary }}>
-            <Link href={`tel:${userinfo.contact.countrycode}${userinfo.contact.phone}`}><a>{`${userinfo.contact.countrycode}${userinfo.contact.phone}`}</a></Link>
+            <Link href={`tel:${userinfo.contact.countrycode}${userinfo.contact.phone}`}>{`${userinfo.contact.countrycode}${userinfo.contact.phone}`}</Link>
           </div> : null
       }
       <div className={styles.socialIconDiv}>
@@ -103,7 +103,7 @@ const Contact = ({ currentTheme }) => {
           userinfo.socials.map((social, key) => {
             return (
               <div className={styles.socialIcon} style={iconStyles} key={key}>
-                <Link href={social.link}><a><FontAwesomeIcon icon={social.icon} /></a></Link>
+                <Link href={social.link}><FontAwesomeIcon icon={social.icon} /></Link>
               </div>
             )
           }) : null

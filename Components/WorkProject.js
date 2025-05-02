@@ -77,12 +77,12 @@ const WorkProject = ({ currentTheme, project, id }) => {
           <div>
             <Tooltip label="Github link" placement="right">
               <div className={styles.socialIcon} style={{ color: currentTheme.subtext, borderColor: currentTheme.subtext }}>
-                {project.githubLink !== '' ? <Link href={project.githubLink}><a><FontAwesomeIcon icon={faGithubAlt} /></a></Link> : <FontAwesomeIcon icon={faGithubAlt} onClick={showGitToast} />}
+                {project.githubLink !== '' ? <Link href={project.githubLink}><FontAwesomeIcon icon={faGithubAlt} /></Link> : <FontAwesomeIcon icon={faGithubAlt} onClick={showGitToast} />}
               </div>
             </Tooltip>
             <Tooltip label="Project link" placement="right">
               <div className={styles.socialIcon} style={{ color: currentTheme.subtext, borderColor: currentTheme.subtext }}>
-                {project.projectLink !== '' ? <Link href={project.projectLink}><a><FontAwesomeIcon icon={faTelegramPlane} /></a></Link> : <FontAwesomeIcon icon={faTelegramPlane} onClick={showProjToast} />}
+                {project.projectLink !== '' ? <Link href={project.projectLink}><FontAwesomeIcon icon={faTelegramPlane} /></Link> : <FontAwesomeIcon icon={faTelegramPlane} onClick={showProjToast} />}
               </div>
             </Tooltip>
           </div>
