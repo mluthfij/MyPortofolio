@@ -45,7 +45,7 @@
 .socialIcon{
   height: 45px;
   width: 45px;
-  padding: 0.75rem;
+  padding: 0.75rem 0 0 0.95rem;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.2s ease-in-out;

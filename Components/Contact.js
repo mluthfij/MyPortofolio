@@ -41,7 +41,7 @@ const Contact = ({ currentTheme }) => {
       isClosable: true,
     })
 
-    fetch('/api/contact', {
+    fetch('https://formspree.io/f/manolnwz', {
       method: 'POST',
       headers: {
         'Accept': 'application/json, text/plain, */*',
