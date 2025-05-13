@@ -6,10 +6,12 @@ import SIS_Pottery from '../styles/projects/logo-sis.png';
 import Halalin from '../styles/projects/logo-halalin.png';
 import Pindad from '../styles/projects/logo-pindad.png';
 import Telehouse from '../styles/projects/logo-telehouse.jpg';
+import my_face from '../styles/me.jpeg';
 
 
 export const userinfo = {
     logoText: "Muhammad Luthfi", //This text is visible on your navbar and footer like your logo.
+    my_face_pict: my_face, //this is your face image. It is advisable to use a square image for better aesthetics.
     contact: {
         email: 'm.luthfi.juliansyah@gmail.com', //It is always a good idea to mention your email on your website. Good platform to communicate.
         phone: ' 821 2739 6006', //Phone number is optional, if you dont want it, consider leaving it blank .
@@ -37,7 +39,7 @@ export const userinfo = {
         },
         {
             category: "Frameworks / Libraries",
-            skills: ["Ruby on Rails", "Laravel", "Nuxt.js", "Stimulus", "Tailwind CSS", "Bootstrap"] //eg. react, nodejs, express etc.
+            skills: ["Ruby on Rails", "Laravel", "Nuxt.js", "NextJS", "Stimulus", "Tailwind CSS", "Bootstrap"] //eg. react, nodejs, express etc.
         },
         {
             category: "Database & Background Jobs",
@@ -54,7 +56,7 @@ export const userinfo = {
     ],
     about: {
         //this text goes at the bottom of your home page.
-        content: "'Do I need to be liked? Absolutely not. I like to be liked. I enjoy being liked. I have to be liked. But it’s not like this compulsive need like my need to be praised.' Whatever the situation or conflict might be, it can almost always be traced back to this need. His conference room characters, fun runs, and copious amounts of office parties are all aimed at his need to be praised.",
+        content: "I'm a software engineer with hands-on experience in Ruby on Rails, API integrations, and real-time feature development. I've contributed to building products like Halalin Company Profile, Halalin Academy, Halalin Identity, Halalin Backoffice, and Halalin Payment Gateway. My work often involves debugging, code refactoring, and optimizing performance. While Ruby on Rails is my core expertise, I'm not limited to it, I'm always eager to learn and work with new tools, frameworks, and technologies.",
         resume: "https://drive.google.com/file/d/1AFyxQp0ioYZiuEeCSZvtqzRkxG87VwOW/view?usp=sharing" //link your resume here. it can be drive link or any other link
     },
     education: {
