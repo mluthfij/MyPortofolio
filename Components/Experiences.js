@@ -2,6 +2,8 @@ import React from 'react'
 import { Box, Avatar } from "@chakra-ui/react"
 import styles from '../styles/Work.module.css'
 import { userinfo, headings } from '../Constants/userinfo'
+// import {Halalin} from '../styles/projects/logo-halalin.png';
+import Image from 'next/image';
 
 const Experiences = ({ currentTheme }) => {
     return (
@@ -18,7 +20,7 @@ const Experiences = ({ currentTheme }) => {
                                         <div className={styles.experienceCardContent}>
                                             <h1>{exp.company}</h1>
                                             <div className={styles.avatar}>
-                                                <Avatar size="xl" name={exp.company} src={exp.companylogo} />
+                                                <Image src={exp.companylogo} alt={exp.company} width='125' className={styles.companylogo} />
                                             </div>
                                             <div style={{ position: 'relative', top: '20px' }}>
                                                 <h2>{exp.position}</h2>

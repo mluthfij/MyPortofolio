@@ -2,6 +2,12 @@
 
 import { faGithubAlt, faLinkedinIn, faMediumM, faFacebook, faTwitter, faInstagram, faYoutube, faBehance } from "@fortawesome/free-brands-svg-icons"
 
+import SIS_Pottery from '../styles/projects/logo-sis.png';
+import Halalin from '../styles/projects/logo-halalin.png';
+import Pindad from '../styles/projects/logo-pindad.png';
+import Telehouse from '../styles/projects/logo-telehouse.jpg';
+
+
 export const userinfo = {
     logoText: "Muhammad Luthfi", //This text is visible on your navbar and footer like your logo.
     contact: {
@@ -73,28 +79,28 @@ export const userinfo = {
         experienceList: [
             {
                 company: 'PT Halal Digital International', //company name eg.Microsoft
-                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*', //companylogo
+                companylogo: Halalin, //companylogo
                 position: 'Junior Software Engineer', //post you held eg.Senior SDE
                 time: 'November 2023 - April 2025', //timespan
                 description: 'Maintain and develop Halalin web applications' //eg. spearheaded the graphics team in designing SASS product UIs
             },
             {
                 company: 'SIS Pottery',
-                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
+                companylogo: SIS_Pottery,
                 position: 'Internship',
                 time: 'February 2022 - August 2022',
                 description: 'Creating a company profile website with product sales system.'
             },
             {
                 company: 'PT Telehouse Engineering',
-                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
+                companylogo: Telehouse,
                 position: 'Freelance',
                 time: 'July 2019 - September 2019',
                 description: 'Assembling ACPDB panel and KWH panel'
             },
             {
                 company: 'PT Pindad (Persero)',
-                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
+                companylogo: Pindad,
                 position: 'Internship',
                 time: 'April 2018 - July 2018',
                 description: 'Electrical power installation in PAM & Asset division'

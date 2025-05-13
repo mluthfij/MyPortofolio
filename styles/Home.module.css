@@ -34,6 +34,7 @@
 .subheading{
   position: relative;
   font-size: 19px;
+  margin-bottom: 1.5rem;
 }
 
 .cta1{
@@ -68,7 +69,7 @@
 .projectIcon{
   height: 60px;
   width: 60px;
-  padding: 1rem;
+  padding: 0.8rem 0rem 0rem 1.125rem;
   border-radius:50%;
   margin-bottom: 1rem;
   border: 4px solid;

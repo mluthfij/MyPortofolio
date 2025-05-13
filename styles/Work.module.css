@@ -38,7 +38,7 @@
     background-size: cover;
     background-position: center;
     border: 2px solid black;
-    padding: 0.2rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction:column;
     justify-content:center;
@@ -64,7 +64,7 @@
 
 .socialIcon{
     border: 2px solid black;
-    padding: 0.4rem;
+    padding: 0.5rem 0rem 0.5rem 0.65rem;
     height: 2.5rem;
     width: 2.5rem;
     margin: 1rem 0 1rem 1rem;
@@ -176,6 +176,10 @@
     display: flex;
     justify-content: center;
     margin: 1rem 0;
+  }
+
+  .companylogo {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.6))
   }
 
 @media only screen and (max-width: 850px){
