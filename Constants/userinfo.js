@@ -35,7 +35,7 @@ export const userinfo = {
         //For aesthetics, it is advisable for you to keep similar number of skills in each category
         {
             category: "Programming Languages", // eg.frontend, backend, devops etc
-            skills: ["Ruby", "Javascript", "PHP", "HTML", "CSS"] //eg. react, html, python etc.
+            skills: ["Ruby", "PHP", "Javascript", "HTML", "CSS"] //eg. react, html, python etc.
         },
         {
             category: "Frameworks / Libraries",
@@ -47,7 +47,7 @@ export const userinfo = {
         },
         {
             category: "DevOps / Tools",
-            skills: ["Git", "Docker"]
+            skills: ["Git", "Docker", "Postman"]
         },
         // {
         //     category: "Real-time / Backend",
