@@ -57,8 +57,8 @@ const WorkProject = ({ currentTheme, project, id }) => {
       <div className={styles.parentcard}>
         <div className={styles.cardtitle}>
           <h1 className={styles.projtitle}>{project.name}</h1>
-          <Box width="100%" overflowX="hidden">
-            <Flex align="center" gap={2} flexWrap="nowrap" justifyContent={isExpanded ? "flex-start" : "flex-end"}>
+          <Box width="45%" overflowX="hidden">
+            <Flex align="center" gap={2} flexWrap="nowrap" justifyContent="flex-end">
               <Box 
                 overflowX="auto" 
                 css={{
@@ -69,9 +69,9 @@ const WorkProject = ({ currentTheme, project, id }) => {
                   'scrollbarWidth': 'none',
                   'whiteSpace': 'nowrap'
                 }}
-                flex="1"
+                width={isExpanded ? "fit-content" : "fit-content"}
               >
-                <HStack spacing={2} display="inline-flex" width="100%" justifyContent={isExpanded ? "flex-start" : "flex-end"}>
+                <HStack spacing={2} display="inline-flex">
                   {project.tech.slice(0, isExpanded ? project.tech.length : maxVisibleTags).map((tech) => (
                     <div key={tech} style={{ display: 'inline-block' }}>
                       <Tag size="sm" borderRadius="md" variant="subtle" colorScheme={currentTheme.name === 'light' ? "cyan" : "purple"}>
