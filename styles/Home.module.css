@@ -158,30 +158,28 @@
   letter-spacing: 1px;
 }
 
-.homeAboutSection{
-  height: 70vh;
-  width: 100%;
-  text-align: center;
+.homeAboutSection {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 10vw;
+  overflow: hidden;
+  padding: 3rem 1rem;
+  min-height: 500px;
 }
 
-.homeAboutSection::before{
+.homeAboutSection::before {
   content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('about-v2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
-    opacity: 0.3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-image: url('about-v2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
 }
 
 .aboutText{
@@ -418,5 +416,19 @@
   }
   .homeSkillSection{
     padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homeAboutSection::before {
+    min-width: 120%;
+    min-height: 120%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homeAboutSection::before {
+    min-width: 150%;
+    min-height: 150%;
   }
 }

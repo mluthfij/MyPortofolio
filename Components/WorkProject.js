@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubAlt, faTelegramPlane } from "@fortawesome/free-brands-svg-icons"
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons"
 import Link from 'next/link'
-import { HStack, Tag, TagLabel, Tooltip, Button, Box, Flex } from "@chakra-ui/react"
+import { HStack, Tag, TagLabel, Tooltip, Button, Box, Flex, Text } from "@chakra-ui/react"
 import { useToast } from "@chakra-ui/react"
 import { useState } from 'react';
 import Image from 'next/image';
@@ -73,11 +73,15 @@ const WorkProject = ({ currentTheme, project, id }) => {
               >
                 <HStack spacing={2} display="inline-flex">
                   {project.tech.slice(0, isExpanded ? project.tech.length : maxVisibleTags).map((tech) => (
-                    <div key={tech} style={{ display: 'inline-block' }}>
-                      <Tag size="sm" borderRadius="md" variant="subtle" colorScheme={currentTheme.name === 'light' ? "cyan" : "purple"}>
-                        <TagLabel>{tech}</TagLabel>
-                      </Tag>
-                    </div>
+                    <Tag 
+                      key={tech} 
+                      size="sm" 
+                      borderRadius="md" 
+                      variant="subtle" 
+                      colorScheme={currentTheme.name === 'light' ? "cyan" : "purple"}
+                    >
+                      <Text as="span">{tech}</Text>
+                    </Tag>
                   ))}
                 </HStack>
               </Box>
@@ -106,16 +110,22 @@ const WorkProject = ({ currentTheme, project, id }) => {
             <button onClick={ahead} style={{position: 'absolute', top: '50%', right: '10px', color: 'black', fontSize: '20px'}}>&gt;</button>
           </div>
           <div>
-            <Tooltip label="Github link" placement="right">
-              <div className={styles.socialIcon} style={{ color: currentTheme.subtext, borderColor: currentTheme.subtext }}>
-                {project.githubLink !== '' ? <Link href={project.githubLink}><FontAwesomeIcon icon={faGithubAlt} /></Link> : <FontAwesomeIcon icon={faGithubAlt} onClick={showGitToast} />}
-              </div>
-            </Tooltip>
-            <Tooltip label="Project link" placement="right">
-              <div className={styles.socialIcon} style={{ color: currentTheme.subtext, borderColor: currentTheme.subtext }}>
-                {project.projectLink !== '' ? <Link href={project.projectLink}><FontAwesomeIcon icon={faTelegramPlane} /></Link> : <FontAwesomeIcon icon={faTelegramPlane} onClick={showProjToast} />}
-              </div>
-            </Tooltip>
+            <Box className={styles.socialIcon} style={{ color: currentTheme.subtext, borderColor: currentTheme.subtext }}>
+              <Tooltip label="Github link" placement="right" hasArrow>
+                {project.githubLink !== '' ? 
+                  <Link href={project.githubLink}><FontAwesomeIcon icon={faGithubAlt} /></Link> : 
+                  <Box as="span" cursor="pointer" onClick={showGitToast}><FontAwesomeIcon icon={faGithubAlt} /></Box>
+                }
+              </Tooltip>
+            </Box>
+            <Box className={styles.socialIcon} style={{ color: currentTheme.subtext, borderColor: currentTheme.subtext }}>
+              <Tooltip label="Project link" placement="right" hasArrow>
+                {project.projectLink !== '' ? 
+                  <Link href={project.projectLink}><FontAwesomeIcon icon={faTelegramPlane} /></Link> : 
+                  <Box as="span" cursor="pointer" onClick={showProjToast}><FontAwesomeIcon icon={faTelegramPlane} /></Box>
+                }
+              </Tooltip>
+            </Box>
           </div>
         </div>
         <div className={styles.cardbottom}>
