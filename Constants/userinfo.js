@@ -57,7 +57,7 @@ export const userinfo = {
     about: {
         //this text goes at the bottom of your home page.
         content: "I'm a software engineer with hands-on experience in Ruby on Rails, API integrations, and real-time feature development. I've contributed to building products like Halalin Company Profile, Halalin Academy, Halalin Identity, Halalin Backoffice, and Halalin Payment Gateway. My work often involves debugging, code refactoring, and optimizing performance. While Ruby on Rails is my core expertise, I'm not limited to it, I'm always eager to learn and work with new tools, frameworks, and technologies.",
-        resume: "https://drive.google.com/file/d/1StTaYww2egEt67x_YnQokEV3SIoyo6as/view?usp=sharing" //link your resume here. it can be drive link or any other link
+        resume: "https://drive.google.com/file/d/1VYwHtzy7tOLqrVXUwfoeGn8GQaOVZ_-a/view?usp=sharing" //link your resume here. it can be drive link or any other link
     },
     education: {
         visible: true, //set this to false if you want to omit this section
